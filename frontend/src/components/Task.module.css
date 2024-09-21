@@ -1,0 +1,104 @@
+.taskContainer{
+    width: 60%;
+   height: auto;
+   
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 5px rgb(112, 103, 103);
+    background-color: white;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+.statusConta{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+.changeStatus{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#description{
+    width: 90%;
+    height: auto;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+
+}
+#status,#dateTime{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+#edit{
+    font-size: 18px;
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.taskContainer .deleteBtn {
+    width: 95%;
+    height: 40px;
+    background-color: rgb(128, 0, 0);
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+.deleteBtn:hover{
+    background-color: rgb(34, 1, 1);
+}
+
+@media (max-width: 376px) {
+    .taskContainer {
+      width: 90%; /* Make the task container full width */
+      padding-left: 0.5rem; /* Reduce padding */
+      box-shadow: 2px 2px 5px 2px rgb(112, 103, 103); /* Reduce box shadow */
+    }
+  
+    .statusConta {
+      width: 95%;
+      margin-top: 1rem; 
+     
+    }
+  
+    .changeStatus {
+      width: 80px; 
+      height: 25px; 
+      font-size: 16px;
+    }
+  
+    #description {
+      width: 100%;
+      font-size: 18px; 
+    }
+  
+    #status, #dateTime {
+      font-size: 16px;
+    }
+  
+    #edit {
+      font-size: 16px; 
+    }
+  
+    .deleteBtn {
+      width: 100%;
+      height: 35px; 
+      font-size: 18px; 
+    }
+  }
+  
